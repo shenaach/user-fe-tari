@@ -1,0 +1,110 @@
+.detail{
+    width: 300px;
+    margin: 2px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    // margin: 0px 25px 40px 25px;
+    
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+
+        .search{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 0.5px solid lightgray;
+            width: 100%;
+            padding: 3px;
+            
+
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+
+                &::placeceholder{
+                   font-size: 12px; 
+                }
+            }
+        }
+    }
+    .detailItem{
+        .detailImg{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+    
+        .detailInfo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            padding: 12px;
+    
+            .detailCat{
+                font-size: 14px;
+                color: #ec9d1e;
+                font-weight: 500;
+                line-height: 20px;
+                margin-top: 15px;
+                margin-right: 10px;
+                // cursor: pointer;
+            }
+    
+            .detailTitle{
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+    
+            .detailDesc{
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 15px;
+                color: #444;
+                line-height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+            .detailBottom {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: .5rem 0 0 0;
+    
+                a {
+                    text-decoration: none;
+                }
+    
+                .buttonRead {
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    background-color: #dff1ff;
+                    color: teal;
+                    // color: #2385d0;
+                    border-radius: 1.5rem;
+                    padding: 7px 13px;
+                    text-align: center;
+                    font-size: .7rem;
+                    font-weight: 500;
+    
+                    &:hover {
+                        box-shadow: 0 2px 4px rgba(83, 100, 255, 0.45);
+                    }
+    
+                }
+            }
+        }
+    }
+
+}

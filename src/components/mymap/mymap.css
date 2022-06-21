@@ -1,0 +1,11 @@
+body {
+  background-color: white;
+  /* flex: 9; */
+}
+.leaflet-container {
+  background-color: rgb(178, 210, 222);
+}
+
+.MyMap {
+  flex: 10;
+}

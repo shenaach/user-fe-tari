@@ -1,0 +1,182 @@
+[
+    {
+        "id": "1",
+        "title": "Saman",
+        "year": 2010,
+        "province": "Aceh",
+        "type": "Pencatatan",
+        "imgThumb": "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "2",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Barat",
+        "type": "Penetapan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "3",
+        "title": "Tor-tor",
+        "year": 2014,
+        "province": "Sumatera Utara",
+        "type": "Penetapan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "4",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Selatan",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "5",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "6",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "7",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "8",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "9",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "10",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "11",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "12",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "13",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "14",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "15",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "16",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "17",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "18",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "19",
+        "title": "Tor-tor",
+        "year": 2013,
+        "province": "Sumatera Utara",
+        "type": "Pencatatan",
+        "imgThumb": "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    },
+    {
+        "id": "20",
+        "title": "Tari Kanjar Ganjur",
+        "year": 2010,
+        "province": "Kalimantan Timur",
+        "type": "Pencatatan",
+        "imgThumb": "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/2011001600-pencatatan-1_1563162525.jpg",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum dicta similique a. Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore Saepe iuremagni eum voluptatem incidunt nulla vero officia dolorum dolorem asperiores corporis nostrumreiciendis, minima quis. lore"
+    }
+]

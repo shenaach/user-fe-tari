@@ -1,0 +1,42 @@
+.singleDetail{
+    padding: 100px;
+    margin-top: -70px;
+    // background-color: #F7FAFC;
+
+        .detailbudaya{
+
+            .singleDetailImg{       
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            .singleDetailTitle{
+                text-align: center;
+                margin: 10px;
+                font-size: 28px;
+            }
+
+            .singleDetailInfo{
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 16px;
+                color: #ec9d1e;
+            }
+
+            .infoDesc{
+                color: #666;
+                font-size: 13px;
+                line-height: 2;
+            }
+
+            .infoDesc::first-letter{
+                margin-left: 20px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+        }
+    }
