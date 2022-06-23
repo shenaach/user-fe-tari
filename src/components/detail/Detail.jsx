@@ -3,27 +3,40 @@ import "./detail.scss";
 // import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
 const Detail = ({culture}) =>{
+    const page = window.location.pathname.split("/")[1];
+    console.log(culture);
     return (
         <div className="detail">
          <div className="detailItem">
+        {/* Gambar notfoundnya nanti ganti */}
          <img 
          className="detailImg"
-         src="https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg"
+         src={
+            culture.img ===
+                "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/" ||
+            !culture.img
+                ? "https://dpwfkdtjabar.com/assets/images/artikel/no-image.png"
+                : culture.img
+        }
          alt=""
          />
          <div className="detailInfo">
              <div className="detailCategory">
                  <span className="detailCat">{culture.year ? culture.year : "-"}</span>
-                 <span className="detailCat">{culture.province ? culture.province : "-"}</span>
+                 <span className="detailCat">{culture.province?.name ? culture.province?.name : "-"}</span>
              </div>
              <span className="detailTitle">
-             {culture.title}
+             {culture.name}
              </span>
              <p className="detailDesc">
-             {culture.desc}
+             {culture.desc ? (
+                        <p>{culture.desc.substring(0, 230)} ...</p>
+                    ) : (
+                        <p>Deskripsi belum tersedia</p>
+                    )}
              </p>
              <div className="detailBottom">
-                 <a className="buttonRead" href="/peta/single">
+                 <a className="buttonRead" href={`/tari/${culture._id}`}>
                      Lihat Selengkapnya
                  </a>
              </div>

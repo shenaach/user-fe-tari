@@ -1,13 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, GeoJSON, Marker,Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./mymap.scss";
-// import "./mymap.css";
 import mapData from "../../components/data/indonesia.json";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { publicRequest } from "../../requestMethods";
+
 import { Icon } from "leaflet";
 
-const MyMap = () => {
+const MyMap = ({ setProvince }) => {
+  const [provinces, setProvinces] = useState([]);
+  const [calc, setCalc] = useState({});
+
+  useEffect(() => {
+      const getAllData = async () => {
+          try {
+              const totalData = await publicRequest.get(`/cultures/count`);
+              const provinceData = await publicRequest.get(`/provinces`);
+              const calcData = await publicRequest.get(`/cultures/calculate`);
+              setProvinces(
+                  mergeProvincesTotal(provinceData.data, totalData.data)
+              );
+              setCalc(calcData.data);
+          } catch (err) {}
+      };
+      getAllData();
+  }, []);
+
+  const findId = (val, totalData) => {
+      let temp = totalData.filter((item) => item._id === val);
+      return temp[0];
+  };
+
+  const mergeProvincesTotal = (val, totalData) => {
+      const test = val?.map((province) => {
+          const totalTemp = findId(province._id, totalData);
+
+          return {
+              ...province,
+              geojson: {
+                  ...province.geojson,
+                  properties: {
+                      ...province.geojson.properties,
+                      provinceId: totalTemp?._id || "",
+                      total: totalTemp?.count || 0,
+                  },
+              },
+          };
+      });
+      return test;
+  };
+
     let data = mapData.map((map) => map.geojson);
     // console.log(mapData);
     //mapdata ; array , map(object)
@@ -17,30 +60,26 @@ const MyMap = () => {
 
     const countryStyle ={
       fillOpacity: 0.7,
-      fillColor: 'red',
+      // fillColor: 'red',
       color: 'black',
       weight: 2
     };
 
-    // const onEachProvince = (province, layer) => {
-      
-      // let high = 99.46658893;
-      // let low = 44.24769678;
+    const onEachCountry = (country, layer) => {
+      if (country.properties.total) {
+          if (country.properties.total >= calc.high) {
+              layer.options.fillColor = "green";
+          } else if (country.properties.total <= calc.low) {
+              layer.options.fillColor = "red";
+          } else {
+              layer.options.fillColor = "yellow";
+          }
+      }
 
-      // const countryName = province.properties.Propinsi;
-      // console.log(countryName);
-      // layer.bindPopup(countryName);
-      // console.log(province.properties.Propinsi);
-
-    //   if (totalBudaya >= high) {
-    //     layer.options.fillColor = '#73D737';
-    //   } else if (totalBudaya <= low) {
-    //     layer.options.fillColor = '#FB4141';
-    //   } else {
-    //     layer.options.fillColor = '#E1FB41';
-    //   }
-    // };
-    // }
+      layer.on("click", function (e) {
+          setProvince(country.properties.provinceId);
+      });
+  };
     
     return (
         <div className="MyMap">
@@ -48,36 +87,87 @@ const MyMap = () => {
                 center={[0.7893, 113.9213]}
                 zoom={5}
                 scrollWheelZoom={false}
-                style={{ height: "100%" }}
+                style={{ height: "100%", zIndex: 1}}
             >
-                <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
+                { provinces.length > 0 && (
                 <GeoJSON
                   style={countryStyle} 
-                  data={data}>
-                </GeoJSON>
-                {
-                    mapData.map((map) => (
-                      <Marker 
-                      position={[map.lat, map.long]}
-                      icon={
-                        new Icon({
-                            iconUrl: markerIconPng,
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                        })
-                    }
-                      >
-                      <Popup>
-                        {map.name}
-                      </Popup>
-                      </Marker>
-                    ))
-                }
-                  
+                  data={provinces.map((map) => map.geojson)}
+                        onEachFeature={onEachCountry}
+                />
+                )}
+                { provinces.map((data) => (
+                    <Marker
+                        position={[data.lat, data.long]}
+                        icon={
+                            new Icon({
+                                iconUrl: markerIconPng,
+                                iconSize: [25, 41],
+                                iconAnchor: [12, 41],
+                            })
+                        }
+                        eventHandlers={{
+                            click: (e) => {
+                                setProvince(data.geojson.properties.provinceId); // will print 'FooBar' in console
+                            },
+                        }}
+                    >
+                        <Popup>
+                            <div className="info">
+                                <b>{data.name}</b>
+                                <p>
+                                    {"Jumlah Seni Tari : " +
+                                        data.geojson.properties.total}
+                                </p>
+                            </div>
+                        </Popup>
+                    </Marker>
+                ))}
             </MapContainer>
+            {calc.high && (
+                <div className="legend">
+                    <div className="title">Klasifikasi</div>
+                    <div className="colorInfo">
+                        <div
+                            className="color"
+                            style={{ background: "green" }}
+                        ></div>
+                        <div>
+                            {" > " + Math.floor(calc.high) + " (Jumlah Tinggi)"}
+                        </div>
+                    </div>
+                    <div className="colorInfo">
+                        <div
+                            className="color"
+                            style={{ background: "yellow" }}
+                        ></div>
+                        <div>
+                            {Math.floor(calc.low) +
+                                " - " +
+                                Math.floor(calc.high) +
+                                " (Jumlah Sedang)"}
+                        </div>
+                    </div>
+                    <div className="colorInfo">
+                        <div
+                            className="color"
+                            style={{ background: "red" }}
+                        ></div>
+                        <div>
+                            {" < " + Math.floor(calc.low) + " (Jumlah Sedikit)"}
+                        </div>
+                    </div>
+                    <div className="provInfo">
+                        Provinsi tinggi : {calc.highProvince}
+                    </div>
+                    <div className="provInfo">
+                        Provinsi sedang : {calc.midProvince}
+                    </div>
+                    <div className="provInfo">
+                        Provinsi sedikit : {calc.lowProvince}
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

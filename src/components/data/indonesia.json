@@ -575,8 +575,8 @@
     },
     {
         "name": "DI Yogyakarta",
-        "lat": -6.4058172,
-        "long": 106.0640179,
+        "lat": 	-7.797068,
+        "long":  110.370529,
         "geojson": {
             "type": "Feature",
             "geometry": {

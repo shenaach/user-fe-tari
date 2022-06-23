@@ -1,42 +1,150 @@
-.singleDetail{
-    padding: 100px;
-    margin-top: -70px;
-    // background-color: #F7FAFC;
+.singleDetail {
+    padding: 50px 0;
+    position: relative;
+    background-color: #E6FFFA;
 
-        .detailbudaya{
+    .cultureDetail-container {
+        padding: 2% 5%;
+        margin: 0 15%;
+        z-index: 2;
+        background-color: #E6FFFA;
 
-            .singleDetailImg{       
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-                object-fit: cover;
+
+        .heading {
+            margin-bottom: 3rem;
+
+
+            h1 {
+                font-size: 3.3rem;
+                text-transform: uppercase;
+                justify-content: center;
             }
 
-            .singleDetailTitle{
-                text-align: center;
-                margin: 10px;
-                font-size: 28px;
-            }
-
-            .singleDetailInfo{
+            .info-top {
+                margin-top: 20px;
                 margin-bottom: 20px;
                 display: flex;
                 justify-content: space-between;
-                font-size: 16px;
-                color: #ec9d1e;
-            }
-
-            .infoDesc{
-                color: #666;
-                font-size: 13px;
-                line-height: 2;
-            }
-
-            .infoDesc::first-letter{
-                margin-left: 20px;
-                font-size: 30px;
                 font-weight: 600;
+                font-size: 15px;
+                align-items: center;
+                color: #fff;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+                // margin-bottom: 2rem;
+
+                .infos1 {
+                    background-color: #B08d51;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                .infos2 {
+                    background-color: rgb(120, 131, 74);
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                .infos3 {
+                    background-color: #FDA050;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                .infos4 {
+                    background-color: #EB470D;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                
+            }
+        }
+
+        .tab-container {
+            min-height: 500px;
+
+            .description {
+
+                .infoDesc{
+                color: black;
+                font-size: 16px;
+                line-height: 2;
+                }
+                
+                .infoDesc::first-letter{
+                    margin-left: 24px;
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #EB470D;
+                }
+
+                .img-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        border-radius: 20px;
+                        width: 100%;
+                        object-fit: cover;
+                        max-height: 400px;
+                    }
+                }
             }
 
+            .videos-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                align-items: center;
+                justify-content: start;
+
+                iframe {
+                    border: none;
+                }
+
+            }
         }
+
     }
+}
+// .singleDetail{
+//     padding: 100px;
+//     margin-top: -70px;
+//     // background-color: #F7FAFC;
+
+//         .detailbudaya{
+
+//             .singleDetailImg{       
+//                 width: 100%;
+//                 height: 100%;
+//                 border-radius: 5px;
+//                 object-fit: cover;
+//             }
+
+//             .singleDetailTitle{
+//                 text-align: center;
+//                 margin: 10px;
+//                 font-size: 28px;
+//             }
+
+//             .singleDetailInfo{
+//                 margin-bottom: 20px;
+//                 display: flex;
+//                 justify-content: space-between;
+//                 font-size: 16px;
+//                 color: #ec9d1e;
+//             }
+
+//             .infoDesc{
+//                 color: #666;
+//                 font-size: 13px;
+//                 line-height: 2;
+//             }
+
+//             .infoDesc::first-letter{
+//                 margin-left: 20px;
+//                 font-size: 30px;
+//                 font-weight: 600;
+//             }
+
+//         }
+//     }
