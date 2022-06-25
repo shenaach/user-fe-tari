@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Josefin Sans', sans-serif;
-    height: 50px;
-    background: white;
+    height: 60px;
+    background-color: #E6FFFA;
     position: sticky;
     top: 0;
     padding: 0 5%;
@@ -41,6 +41,10 @@
         &#active {
             a {
                 color: teal;
+                background-color: #E6FFFA;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 2px;
             }
         }
     }
@@ -50,7 +54,7 @@
         color: #444;
 
         &:hover {
-            color: teal;
+            color: #888;
         }
     }
 

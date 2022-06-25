@@ -6,10 +6,12 @@
     .legend {
         width: 155px;
         position: absolute;
-        background-color: white;
+        background-color: #E6FFFA;
+        // border-radius: 10px;
+        // background-color: white;
         right: 0;
         top: 0;
-        padding: 15px 10px;
+        // padding: 15px 10px;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -17,6 +19,10 @@
 
         .title {
             text-align: center;
+            padding: 10px;
+            width: 135px;
+            color: white;
+            background-color: teal;
         }
 
         .colorInfo {
@@ -25,15 +31,17 @@
             gap: 10px;
             font-size: 0.7rem;
             text-align: left;
+            padding: 5px 8px;
 
             .color {
                 width: 30px;
-                height: 17px;
+                height: 15px;
             }
         }
 
         .provInfo {
             font-size: 0.7rem;
+            padding: 5px 8px;
 
         }
     }

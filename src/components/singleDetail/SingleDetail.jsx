@@ -18,10 +18,11 @@ const CultureDetail = () => {
     };
 
     const photos = [
-        "https://www.99.co/blog/indonesia/wp-content/uploads/2020/11/egrang.jpg",
-        "https://www.99.co/blog/indonesia/wp-content/uploads/2020/11/egrang.jpg",
-        "https://www.99.co/blog/indonesia/wp-content/uploads/2020/11/egrang.jpg",
+        "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
+        "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
+        "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
     ];
+
     const videos = [
         "https://www.youtube.com/embed/D4jq5Bd9bTA",
         "https://www.youtube.com/embed/D4jq5Bd9bTA",
@@ -65,7 +66,7 @@ const CultureDetail = () => {
                         <Tabs value={value} onChange={handleChange}>
                             <Tab label="Deskripsi" />
                             <Tab label="Foto" />
-                            <Tab label="Video" />
+                            {/* <Tab label="Video" /> */}
                         </Tabs>
                     </Box>
                 </div>
@@ -78,7 +79,7 @@ const CultureDetail = () => {
                                         culture.img ===
                                             "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/" ||
                                         !culture.img
-                                            ? "https://dpwfkdtjabar.com/assets/images/artikel/no-image.png"
+                                            ? "http://dkptph.sulselprov.go.id/assets/foto_berita/picture-not-available.jpg"
                                             : culture.img
                                     }
                                     alt=""
@@ -89,25 +90,27 @@ const CultureDetail = () => {
                                     "Deskripsi tidak tersedia"}
                             </p>
                         </div>
-                    ) : value === 1 ? (
+                    ) : (
                         culture.imgs.length > 0 ? (
                             <Gallery images={culture.imgs} />
                         ) : (
                             "Gambar tidak tersedia"
                         )
-                    ) : (
-                        <div className="videos-container">
-                            {culture.videos.length > 0
-                                ? culture?.videos.map((video) => (
-                                      <iframe
-                                          width="320"
-                                          height="215"
-                                          src={video}
-                                      ></iframe>
-                                  ))
-                                : "Video tidak tersedia"}
-                        </div>
-                    )}
+                    ) 
+                    // : (
+                    //     <div className="videos-container">
+                    //         {culture.videos.length > 0
+                    //             ? culture?.videos.map((video) => (
+                    //                   <iframe
+                    //                       width="320"
+                    //                       height="215"
+                    //                       src={video}
+                    //                   ></iframe>
+                    //               ))
+                    //             : "Video tidak tersedia"}
+                    //     </div>
+                    // )
+                    }
                 </div>
             </div>
         </div>
@@ -115,35 +118,3 @@ const CultureDetail = () => {
 };
 
 export default CultureDetail;
-// import React from "react";
-// import "./singleDetail.scss";
-
-// const SingleDetail = () => {
-//     return(
-//         <div className="singleDetail">
-//                 <div className="detailbudaya">
-//                     <img 
-//                     src="https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg" 
-//                     alt="" 
-//                     className="singleDetailImg"
-//                     />
-//                     <h1 className="singleDetailTitle">Iya
-//                     {culture.title}
-//                     </h1>
-//                     <div className="singleDetailInfo">
-//                         <span className="infoCat">Iya
-//                             {culture.year ? culture.year : "-"}
-//                             </span>
-//                         <span className="infoCat">Iya
-//                             {culture.province ? culture.province : "-"}
-//                             </span>
-//                     </div>
-//                     <p className="infoDesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-//                     {culture.desc}
-//                     </p>
-//                 </div>
-//         </div>
-//     );
-// };
-
-// export default SingleDetail;

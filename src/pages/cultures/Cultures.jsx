@@ -44,7 +44,7 @@ const Cultures = () => {
         getAllCultures();
     }, []);
 
-    const PER_PAGE = 6;
+    const PER_PAGE = 8;
     const count = Math.ceil(list?.length / PER_PAGE);
 
     const handleChange = (e, p) => {

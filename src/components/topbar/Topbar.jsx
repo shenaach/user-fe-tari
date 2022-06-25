@@ -4,7 +4,7 @@ import "./topbar.scss";
 const Topbar = () => {
     const topbarData = [
         {
-            title: "Home",
+            title: "Beranda",
             path: "/",
         },
         {
@@ -25,7 +25,7 @@ const Topbar = () => {
     return (
         <nav className={active ? "topbar active" : "topbar"}>
             <div className="brand">
-                <a href="/">Maps</a>
+                <a href="/">Lestari</a>
                 <i className="topIcon fa-solid fa-map-location-dot"></i>
             </div>
             <ul className={active ? "menu active" : "menu"}>
