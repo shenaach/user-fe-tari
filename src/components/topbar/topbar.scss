@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Josefin Sans', sans-serif;
-    height: 60px;
+    height: 50px;
     background-color: #E6FFFA;
     position: sticky;
     top: 0;
@@ -42,9 +42,6 @@
             a {
                 color: teal;
                 background-color: #E6FFFA;
-                padding: 5px;
-                margin: 5px;
-                border-radius: 2px;
             }
         }
     }
@@ -137,9 +134,11 @@
 
         &.active {
             background: teal;
+            
 
             a {
                 color: white;
+                
             }
 
             .toggler {

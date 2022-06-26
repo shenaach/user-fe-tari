@@ -34,7 +34,8 @@ const Topbar = () => {
                         className="item"
                         key={key}
                         id={
-                            window.location.pathname === item.path
+                            window.location.pathname.split("/")[1] ===
+                            item.path.split("/")[1]
                                 ? "active"
                                 : ""
                         }

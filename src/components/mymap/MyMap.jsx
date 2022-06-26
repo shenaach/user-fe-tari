@@ -133,7 +133,7 @@ const MyMap = ({ setProvince }) => {
                             style={{ background: "green" }}
                         ></div>
                         <div>
-                            {" > " + Math.floor(calc.high) + "    (Jml. Tinggi)"}
+                            {" > " + Math.floor(calc.high) + "    (Tinggi)"}
                         </div>
                     </div>
                     <div className="colorInfo">
@@ -145,7 +145,7 @@ const MyMap = ({ setProvince }) => {
                             {Math.floor(calc.low) +
                                 " - " +
                                 Math.floor(calc.high) +
-                                " (Jml. Sedang)"}
+                                " (Sedang)"}
                         </div>
                     </div>
                     <div className="colorInfo">
@@ -154,7 +154,7 @@ const MyMap = ({ setProvince }) => {
                             style={{ background: "red" }}
                         ></div>
                         <div>
-                            {" < " + Math.floor(calc.low) + "    (Jml. Sedikit)"}
+                            {" < " + Math.floor(calc.low) + "    (Rendah)"}
                         </div>
                     </div>
                     <div className="provInfo">
@@ -164,7 +164,7 @@ const MyMap = ({ setProvince }) => {
                         Provinsi sedang : {calc.midProvince}
                     </div>
                     <div className="provInfo">
-                        Provinsi sedikit : {calc.lowProvince}
+                        Provinsi rendah : {calc.lowProvince}
                     </div>
                 </div>
             )}
