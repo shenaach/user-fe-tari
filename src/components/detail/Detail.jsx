@@ -15,7 +15,7 @@ const Detail = ({culture}) =>{
             culture.img ===
                 "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/" ||
             !culture.img
-                ? "https://www.sdalmuttaqin-tasikmalaya.sch.id/images/no-photos.png"
+                ? "https://www.sewakantorcbd.com/_nuxt/img/notAvailable.36eba18.png"
                 : culture.img
         }
          alt=""

@@ -79,7 +79,7 @@ const CultureDetail = () => {
                                         culture.img ===
                                             "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/" ||
                                         !culture.img
-                                            ? "http://dkptph.sulselprov.go.id/assets/foto_berita/picture-not-available.jpg"
+                                            ? "https://www.sewakantorcbd.com/_nuxt/img/notAvailable.36eba18.png"
                                             : culture.img
                                     }
                                     alt=""
