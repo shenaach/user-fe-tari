@@ -86,27 +86,25 @@ const CultureDetail = () => {
                                     "Deskripsi tidak tersedia"}
                             </p>
                         </div>
-                    ) : (
+                    ) : value === 1 ? (
                         culture.imgs.length > 0 ? (
                             <Gallery images={culture.imgs} />
                         ) : (
                             "Gambar tidak tersedia"
                         )
-                    ) 
-                    // : (
-                    //     <div className="videos-container">
-                    //         {culture.videos.length > 0
-                    //             ? culture?.videos.map((video) => (
-                    //                   <iframe
-                    //                       width="320"
-                    //                       height="215"
-                    //                       src={video}
-                    //                   ></iframe>
-                    //               ))
-                    //             : "Video tidak tersedia"}
-                    //     </div>
-                    // )
-                    }
+                    ) : (
+                        <div className="videos-container">
+                            {culture.videos.length > 0
+                                ? culture?.videos.map((video) => (
+                                      <iframe
+                                          width="320"
+                                          height="215"
+                                          src={video}
+                                      ></iframe>
+                                  ))
+                                : "Video tidak tersedia"}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
