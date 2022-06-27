@@ -58,10 +58,10 @@ const CultureDetail = () => {
                             {"Tipe " + culture?.type || "-"}
                         </div>
                     </div>
-                    <Box sx={{ borderBottom: 1, borderColor: "teal" }}>
+                    <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
                         <Tabs value={value} onChange={handleChange}>
                             <Tab label="Deskripsi" />
-                            <Tab label="Foto" />
+                            <Tab label="Galeri" />
                             <Tab label="Video" />
                         </Tabs>
                     </Box>
