@@ -4,11 +4,10 @@ import "./detail.scss";
 
 const Detail = ({culture}) =>{
     const page = window.location.pathname.split("/")[1];
-    console.log(culture);
+    
     return (
         <div className="detail">
          <div className="detailItem">
-        {/* Gambar notfoundnya nanti ganti */}
          <img 
          className="detailImg"
          src={

@@ -43,26 +43,22 @@ const CultureDetail = () => {
         <div className="singleDetail">
             <div className="cultureDetail-container">
                 <div className="heading">
-                    <h1>{culture.name}</h1>
-                    {/* <div className="regnum">
-                        <span>Nomor Registrasi :</span>
-                        <span> {culture.reg_num || "-"}</span>
-                    </div> */}
+                    <h1>{culture?.name}</h1>
                     <div className="info-top">
                         <div className="infos1">
-                            {"Tahun " + culture.year || "-"}
+                            {"Tahun " + culture?.year || "-"}
                         </div>
                         <div className="infos2">
                             {culture?.province?.name || "-"}
                         </div>
                         <div className="infos3">
-                            {"No Reg. " + culture.reg_num || "-"}
+                            {"No Reg. " + culture?.reg_num || "-"}
                         </div>
                         <div className="infos4">
-                            {"Tipe " + culture.type || "-"}
+                            {"Tipe " + culture?.type || "-"}
                         </div>
                     </div>
-                    <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                    <Box sx={{ borderBottom: 1, borderColor: "teal" }}>
                         <Tabs value={value} onChange={handleChange}>
                             <Tab label="Deskripsi" />
                             <Tab label="Foto" />

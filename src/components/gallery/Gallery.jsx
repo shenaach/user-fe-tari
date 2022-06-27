@@ -6,12 +6,6 @@ const Gallery = () =>{
     const [model, setModel] = useState(false);
     const [img, setImg] = useState("");
 
-    const photos = [
-        "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
-        "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
-        "https://warisanbudaya.kemdikbud.go.id/dashboard/media/photos/56339-11.jpg",
-    ];
-
     const getImg = (imgSrc) => {
         setImg(imgSrc);
         setModel(true);
