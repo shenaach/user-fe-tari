@@ -81,16 +81,16 @@ const CultureDetail = () => {
                                     alt=""
                                 />
                             </div>
-                            <p className="infoDesc">
+                            <p>
                                 {culture.desc ||
-                                    "Deskripsi tidak tersedia"}
+                                    "Deskripsi belum tersedia"}
                             </p>
                         </div>
                     ) : value === 1 ? (
                         culture.imgs.length > 0 ? (
                             <Gallery images={culture.imgs} />
                         ) : (
-                            "Gambar tidak tersedia"
+                            "Galeri belum tersedia"
                         )
                     ) : (
                         <div className="videos-container">
@@ -102,11 +102,11 @@ const CultureDetail = () => {
                                           src={video}
                                       ></iframe>
                                   ))
-                                : "Video tidak tersedia"}
+                                : "Video belum tersedia"}
                         </div>
                     )}
                 </div>
-            </div>
+                </div>
         </div>
     );
 };
