@@ -81,7 +81,7 @@ const CultureDetail = () => {
                                     alt=""
                                 />
                             </div>
-                            <p>
+                            <p className="infoDesc">
                                 {culture.desc ||
                                     "Deskripsi belum tersedia"}
                             </p>
