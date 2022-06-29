@@ -2,13 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Josefin Sans', sans-serif;
-    height: 50px;
-    background-color: #E6FFFA;
+    height: 60px;
+    background: #E6FFFA;
     position: sticky;
     top: 0;
     padding: 0 5%;
-    z-index: 9999999999;
+    z-index: 999;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.107);
     // border-bottom: 2px solid whitesmoke;
 
@@ -18,6 +17,7 @@
         text-transform: uppercase;
         font-weight: bold;
         flex: 1;
+        font-size: 20px;
 
         .topIcon{
             font-size: 20px;
@@ -37,11 +37,13 @@
 
     li {
         list-style: none;
+        font-size: 18px;
 
         &#active {
             a {
                 color: teal;
                 background-color: #E6FFFA;
+                // color: black;
             }
         }
     }
@@ -134,11 +136,11 @@
 
         &.active {
             background: teal;
-            
 
             a {
                 color: white;
-                
+                padding: 3px;
+                border-radius: 3px;
             }
 
             .toggler {
@@ -150,3 +152,156 @@
     }
 
 }
+
+// .topbar {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     font-family: 'Josefin Sans', sans-serif;
+//     height: 50px;
+//     background-color: #E6FFFA;
+//     position: sticky;
+//     top: 0;
+//     padding: 0 5%;
+//     z-index: 9999999999;
+//     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.107);
+//     // border-bottom: 2px solid whitesmoke;
+
+
+
+//     .brand {
+//         text-transform: uppercase;
+//         font-weight: bold;
+//         flex: 1;
+
+//         .topIcon{
+//             font-size: 20px;
+//             margin-right: 10px;
+//             padding: 10px;
+//             color: teal;
+//         }
+//     }
+
+//     .menu {
+//         flex: 1;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         gap: 3rem;
+//     }
+
+//     li {
+//         list-style: none;
+
+//         &#active {
+//             a {
+//                 color: teal;
+//                 background-color: #E6FFFA;
+//             }
+//         }
+//     }
+
+//     a {
+//         text-decoration: none;
+//         color: #444;
+
+//         &:hover {
+//             color: #888;
+//         }
+//     }
+
+//     .toggler {
+//         cursor: pointer;
+//         display: none;
+
+//         div {
+//             width: 25px;
+//             height: 3px;
+//             margin: 5px;
+//             background: #888;
+//             transition: 0.3s ease-in-out;
+
+//         }
+
+//     }
+
+//     .toggle {
+
+//         .line1 {
+//             transform: rotate(-45deg) translateY(11px);
+//         }
+
+//         .line3 {
+//             transform: rotate(45deg) translateY(-12px);
+//         }
+
+//         .line2 {
+//             opacity: 0;
+//         }
+
+//         // .line1 {
+//         //     transform: rotate(-45deg) translate(-7px, 5px);
+//         // }
+
+//         // .line3 {
+//         //     transform: rotate(45deg) translate(-6px, -5px);
+//         // }
+
+//         // .line2 {
+//         //     opacity: 0;
+//         // }
+//     }
+
+
+//     @media screen and (max-width: 768px) {
+
+//         .toggler {
+//             display: block;
+//         }
+
+//         .menu {
+//             position: fixed;
+//             top: 50px;
+//             right: 0;
+//             width: 50%;
+//             height: 100vh;
+//             flex-direction: column;
+//             justify-content: start;
+//             align-items: center;
+//             gap: 1.5rem;
+//             padding: 20px;
+//             font-size: 1.2rem;
+//             margin: 0;
+//             z-index: 999999;
+//             transform: translateX(100%);
+//             transition: 0.2s ease-in;
+
+//             a {
+//                 color: white;
+//             }
+//         }
+
+//         .active {
+//             transform: translateX(0);
+
+//             background-color: teal;
+//         }
+
+//         &.active {
+//             background: teal;
+            
+
+//             a {
+//                 color: white;
+                
+//             }
+
+//             .toggler {
+//                 div {
+//                     background-color: white;
+//                 }
+//             }
+//         }
+//     }
+
+// }

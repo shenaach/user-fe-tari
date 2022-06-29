@@ -62,7 +62,7 @@ const CultureDetail = () => {
                         <Tabs value={value} onChange={handleChange}>
                             <Tab label="Deskripsi" />
                             <Tab label="Galeri" />
-                            <Tab label="Video" />
+                            {/* <Tab label="Video" /> */}
                         </Tabs>
                     </Box>
                 </div>
@@ -86,25 +86,14 @@ const CultureDetail = () => {
                                     "Deskripsi belum tersedia"}
                             </p>
                         </div>
-                    ) : value === 1 ? (
+                    ) : (
                         culture.imgs.length > 0 ? (
                             <Gallery images={culture.imgs} />
                         ) : (
                             "Galeri belum tersedia"
                         )
-                    ) : (
-                        <div className="videos-container">
-                            {culture.videos.length > 0
-                                ? culture?.videos.map((video) => (
-                                      <iframe
-                                          width="320"
-                                          height="215"
-                                          src={video}
-                                      ></iframe>
-                                  ))
-                                : "Video belum tersedia"}
-                        </div>
-                    )}
+                    ) 
+                }
                 </div>
                 </div>
         </div>

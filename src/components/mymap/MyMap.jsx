@@ -90,11 +90,17 @@ const MyMap = ({ setProvince }) => {
                 style={{ height: "100%", zIndex: 1}}
             >
                 { provinces.length > 0 && (
-                <GeoJSON
-                  style={countryStyle} 
-                  data={provinces.map((map) => map.geojson)}
-                        onEachFeature={onEachCountry}
-                />
+                    <>
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <GeoJSON
+                        style={countryStyle} 
+                        data={provinces.map((map) => map.geojson)}
+                                onEachFeature={onEachCountry}
+                />                   
+                </>
                 )}
                 { provinces.map((data) => (
                     <Marker
