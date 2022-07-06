@@ -1,6 +1,7 @@
 import React from "react";
 import './hero.css';
-import img from "../../images/3508755.jpg";
+// import img from "../../images/3508755.jpg";
+import img from "../../images/group.png";
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 

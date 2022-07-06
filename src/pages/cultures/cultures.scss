@@ -91,6 +91,7 @@
         padding: 40px 40px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+        // grid-gap: 1.5rem;
         grid-gap: 0.77rem;
         justify-content: center;
     }
