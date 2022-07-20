@@ -59,7 +59,7 @@ const MyMap = ({ setProvince }) => {
     // mapData.map((map) => console.log(map));
 
     const countryStyle ={
-      fillOpacity: 0.7,
+      fillOpacity: 0.5,
       // fillColor: 'red',
       color: 'black',
       weight: 2
@@ -79,6 +79,16 @@ const MyMap = ({ setProvince }) => {
       layer.on("click", function (e) {
           setProvince(country.properties.provinceId);
       });
+      layer.on("mouseover", function (e) {
+        e.target.setStyle({
+            fillOpacity: 0.7,
+        });
+    });
+    layer.on("mouseout", function (e) {
+        e.target.setStyle({
+            fillOpacity: 0.3,
+        });
+    });
   };
     
     return (
