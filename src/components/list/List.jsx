@@ -125,6 +125,8 @@ const List = ({ province, setProvince }) => {
                         size="2rem"
                         thickness={5}
                     />
+                ) : list.length < 1 ? (
+                    <div className="">Seni Tari tidak ditemukan</div>
                 ) : (
                     list.map((culture) => <Detail culture={culture} />)
                 )}
