@@ -1,6 +1,5 @@
 import React from 'react';
 import "./detail.scss";
-// import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
 const Detail = ({culture}) =>{
     const page = window.location.pathname.split("/")[1];

@@ -2,14 +2,12 @@ import React from "react";
 import Home from "./pages/home/Home";
 import Maps from "./pages/home/Maps";
 import Cultures from "./pages/cultures/Cultures";
-// import Topbar from "../../components/topbar/Topbar";
 import Single from "./pages/single/Single";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return(
     <div className="App">
-    {/* <Topbar /> */}
     <BrowserRouter>
                 <Routes>
                     <Route path="/">

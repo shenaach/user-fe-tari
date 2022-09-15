@@ -1,48 +1,92 @@
-.MyMap {
+.MyMaps {
     flex: 8;
     z-index: 1;
     position: relative;
-
+  
+    .map_container {
+      height: 100%;
+      z-index: 1;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .map_container {
+        display: block;
+        height: 100%;
+      }
+    }
+  
     .legend {
-        width: 155px;
-        position: absolute;
-        background-color: #E6FFFA;
-        // border-radius: 10px;
-        // background-color: white;
-        right: 0;
-        top: 0;
-        // padding: 15px 10px;
+      width: 155px;
+      position: absolute;
+      background-color: #e6fffa;
+      // border-radius: 10px;
+      // background-color: white;
+      right: 0;
+      top: 0;
+      // padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 2;
+  
+      .title {
+        text-align: center;
+        padding: 10px;
+        width: 135px;
+        color: white;
+        background-color: teal;
+      }
+  
+      .colorInfo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.75rem;
+        text-align: left;
+        padding: 5px 8px;
+  
+        .color {
+          width: 30px;
+          height: 15px;
+        }
+      }
+  
+      .provInfo {
+        font-size: 0.75rem;
+        padding: 5px 8px;
+      }
+    }
+    .mobile_map {
+      display: none;
+    }
+    .button-open {
+      display: none;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .mobile_map {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+  
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        width: 100%;
+        background-color: white;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .button-open {
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 5px;
+        right: 0;
         z-index: 2;
-
-        .title {
-            text-align: center;
-            padding: 10px;
-            width: 135px;
-            color: white;
-            background-color: teal;
-        }
-
-        .colorInfo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.75rem;
-            text-align: left;
-            padding: 5px 8px;
-
-            .color {
-                width: 30px;
-                height: 15px;
-            }
-        }
-
-        .provInfo {
-            font-size: 0.75rem;
-            padding: 5px 8px;
-
-        }
+      }
+      /* STYLES HERE */
     }
-}
+  }
+  

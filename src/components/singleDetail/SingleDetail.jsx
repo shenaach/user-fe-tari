@@ -62,7 +62,6 @@ const CultureDetail = () => {
                         <Tabs value={value} onChange={handleChange}>
                             <Tab label="Deskripsi" />
                             <Tab label="Galeri" />
-                            {/* <Tab label="Video" /> */}
                         </Tabs>
                     </Box>
                 </div>
